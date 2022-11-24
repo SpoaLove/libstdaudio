@@ -26,7 +26,7 @@ add_executable(sine_wave examples/sine_wave.cpp)
 add_executable(melody examples/melody.cpp)
 add_executable(level_meter examples/level_meter.cpp)
 
-add_executable(test
+add_executable(tests
         test/test_main.cpp
         test/audio_buffer_test.cpp
         test/audio_device_test.cpp)

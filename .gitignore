@@ -2,3 +2,8 @@
 cmake-build*
 .DS_Store
 /.vs
+/.vscode
+/CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+Makefile

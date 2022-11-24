@@ -104,7 +104,7 @@ public:
     AudioObjectPropertyAddress pa = {
       kAudioDevicePropertyNominalSampleRate,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     uint32_t data_size = 0;
@@ -128,7 +128,7 @@ public:
     AudioObjectPropertyAddress pa = {
       kAudioDevicePropertyNominalSampleRate,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     return __coreaudio_util::check_error(AudioObjectSetPropertyData(
@@ -141,7 +141,7 @@ public:
     AudioObjectPropertyAddress pa = {
       kAudioDevicePropertyBufferFrameSize,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     uint32_t data_size = 0;
@@ -169,7 +169,7 @@ public:
     AudioObjectPropertyAddress pa = {
       kAudioDevicePropertyBufferFrameSize,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     return __coreaudio_util::check_error(AudioObjectSetPropertyData(
@@ -337,7 +337,7 @@ private:
     AudioObjectPropertyAddress pa = {
       kAudioDevicePropertyAvailableNominalSampleRates,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     uint32_t data_size = 0;
@@ -363,7 +363,7 @@ private:
     AudioObjectPropertyAddress pa = {
       kAudioDevicePropertyBufferFrameSizeRange,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     uint32_t data_size = 0;
@@ -421,7 +421,7 @@ public:
     AudioObjectPropertyAddress pa = {
       selector,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     AudioDeviceID device_id;
@@ -467,7 +467,7 @@ private:
     AudioObjectPropertyAddress pa = {
       kAudioHardwarePropertyDevices,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     uint32_t data_size = 0;
@@ -501,7 +501,7 @@ private:
     AudioObjectPropertyAddress pa = {
       kAudioDevicePropertyDeviceName,
       kAudioObjectPropertyScopeGlobal,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     uint32_t data_size = 0;
@@ -528,7 +528,7 @@ private:
     AudioObjectPropertyAddress pa = {
       kAudioDevicePropertyStreamConfiguration,
       scope,
-      kAudioObjectPropertyElementMaster
+      kAudioObjectPropertyElementMain
     };
 
     uint32_t data_size = 0;
@@ -588,7 +588,7 @@ private:
     AudioObjectPropertyAddress pa = {
         selector,
         kAudioObjectPropertyScopeGlobal,
-        kAudioObjectPropertyElementMaster
+        kAudioObjectPropertyElementMain
     };
 
     if (!__coreaudio_util::check_error(AudioObjectAddPropertyListener(
